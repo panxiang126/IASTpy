@@ -57,8 +57,8 @@ def quitScript(pot):
   input('press any key to quit script...')
   sys.exit()
 
-readDir = input("please enter the data directory.\n(defult: "+r"molData.csv): ")
-readDir = "molData.csv" if readDir == "" else readDir.replace('"','')
+readDir = input("please enter the data directory.\n(defult: "+r"./examples/molData.csv): ")
+readDir = "./examples/molData.csv" if readDir == "" else readDir.replace('"','')
 
 try:
   if "csv" in readDir:

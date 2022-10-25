@@ -1,6 +1,4 @@
-# binder_IASTpy
-
-https://mybinder.org
+# IASTpy
 
 
-https://mybinder.org/v2/gh/panxiang126/binder_IASTpy/HEAD
+using binder: https://mybinder.org/v2/gh/panxiang126/IASTpy/HEAD

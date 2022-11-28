@@ -42,7 +42,9 @@ if not lastIndex == allIndex[-1]:
 print(outList)
 
 n=0
-for i in outList:
-  savedf=df_mol[i[0]: i[-1]]
-  savedf.to_excel(f"split_{n+1}.xlsx",index=False, header=None)
-  n+=1
+with pd.ExcelWriter(r"./split_total.xlsx") as xlsx:
+  for i in outList:
+    savedf=df_mol[i[0]: i[-1]]
+    savedf.to_excel(f"split_{n+1}.xlsx",index=False, header=None)
+    savedf.to_excel(xlsx,sheet_name=f"split_{n+1}",index=False, header=None)
+    n+=1
